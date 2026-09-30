@@ -1,0 +1,157 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#sidebar {
+  background-color: #172337;
+  position: fixed;
+  height: 100vh;
+}
+
+.Toastify__toast {
+  background-color: black !important;
+  color: white !important;
+}
+
+.no-image {
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 16px;
+}
+
+.corner-ribbon {
+  width: 150px;
+  background: #d85663;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 0;
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+}
+
+.avatar-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #888888;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.btn-outline-mycolor {
+  color: #172337 !important;
+  border-color: #172337 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-mycolor:active {
+  color: #fff !important;
+  background-color: #0a101c !important;
+  border-color: #080d18 !important;
+}
+
+.btn-mycolor,
+.btn-outline-mycolor:hover {
+  background-color: #172337 !important;
+  border-color: #172337 !important;
+  color: #fff !important;
+}
+
+.btn-mycolor:hover {
+  background-color: #0f1825 !important;
+  border-color: #0d1420 !important;
+}
+
+.btn-mycolor:active {
+  background-color: #0a101c !important;
+  border-color: #080d18 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #12669e;
+}
+
+@font-face {
+  font-family: "Crillee";
+  src: url("/fonts/Crillee-Bold.ttf/");
+  font-size: normal;
+  font-weight: bold;
+}
+
+.company-logo {
+  font-family: "Crillee", sans-serif;
+  font-style: italic;
+}
+
+#sidebar {
+  width: 210px;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    width: 80px;
+  }
+}
+
+.app-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sidebar-wrapper {
+  flex: 0 0 220px;
+  display: block;
+}
+
+.sidebar-wrapper.collapsed {
+  flex: 0 0 70px;
+}
+
+#sidebar {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content-area {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar-wrapper {
+    flex: 0 0 70px;
+  }
+}

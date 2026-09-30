@@ -1,0 +1,14 @@
+.Toastify__toast-container.app-toast-center {
+  top: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 50% !important;
+  width: min(420px, calc(100vw - 2rem));
+  padding: 0;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.app-toast-center .Toastify__toast {
+  margin-bottom: .75rem;
+}
