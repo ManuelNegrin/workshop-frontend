@@ -1,4 +1,4 @@
-const SESSION_KEY = "fermil.session";
+const SESSION_KEY = "workshop.session";
 
 export const readSession = () => {
   try {

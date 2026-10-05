@@ -8,8 +8,11 @@ import { confirmToast } from "../ConfirmationToast";
 
 const roleLabels = {
   Administrator: "Administrador",
-  Logistics: "Logistica",
-  Mechanics: "Mecanica",
+  ServiceAdvisor: "Asesor de servicio",
+  Technician: "Técnico",
+  InventoryManager: "Inventario",
+  Cashier: "Caja",
+  ReadOnly: "Solo lectura",
 };
 
 const emptyUserForm = {

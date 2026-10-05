@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import process from "node:process";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -7,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://fermil-srl-backend.vercel.app",
+        target: process.env.VITE_DEV_API_TARGET || "http://localhost:5000",
         changeOrigin: true,
         rewrite: (path) => path,
       },

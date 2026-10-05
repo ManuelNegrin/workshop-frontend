@@ -3,12 +3,13 @@ import { useAuth } from "../../context/useAuth";
 
 const links = [
   ["/", "Resumen", "dashboard.read"],
-  ["/viajes", "Viajes", "trips.read"],
   ["/clientes", "Clientes", "customers.read"],
   ["/vehiculos", "Vehiculos", "vehicles.read"],
-  ["/choferes", "Choferes", "drivers.read"],
-  ["/combustible", "Combustible", "fuel_tickets.read"],
-  ["/taller", "Ordenes de taller", "work_orders.read"],
+  ["/agenda", "Agenda", "appointments.read"],
+  ["/ordenes", "Órdenes", "repair_orders.read"],
+  ["/tecnicos", "Técnicos", "technicians.read"],
+  ["/inventario", "Inventario", "inventory.read"],
+  ["/sucursales", "Sucursales", "locations.read"],
   ["/admin", "Administracion", "users.manage"],
   ["/perfil", "Mi perfil", null],
 ];
@@ -19,7 +20,7 @@ export default function SideBar() {
   return (
     <aside className="sidebar p-3">
       <div className="sidebar-brand">
-        <div>FIXORIS</div>
+        <div>TALLER</div>
       </div>
       <div className="small text-white-50 mb-3">{user?.fullName}</div>
       <nav className="nav nav-pills flex-column gap-1">
